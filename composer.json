@@ -1,0 +1,25 @@
+{
+  "name": "luiz.souza/api-tarefas",
+  "autoload": {
+    "files": [
+      "classes/mensagens.php",
+      "classes/functions.php",
+      "classes/jwt.php",
+      "api/clientes/Model/postUserModel.php",
+      "api/clientes/Model/getUserModel.php",
+      "api/clientes/Model/updateUserModel.php",
+      "api/clientes/Model/deleteUserModel.php"
+    ],
+    "psr-4": {
+      "classes\\": "classes",
+      "Model\\": "Model"
+    }
+  },
+  "authors": [
+    {
+      "name": "luiz.souza",
+      "email": "luiz.martins@unitri.edu.br"
+    }
+  ],
+  "require": {}
+}

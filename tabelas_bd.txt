@@ -1,0 +1,15 @@
+delimiter $$
+
+CREATE TABLE `users` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `last_name` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  `date_register` date DEFAULT curdate(),
+  PRIMARY KEY (`id`),
+  CONSTRAINT `check_senha_minimo_caracteres` CHECK (octet_length(`password`) >= 8),
+  CONSTRAINT `check_name_minimo_caracteres` CHECK (octet_length(`name`) >= 2),
+  CONSTRAINT `check_last_name_minimo_caracteres` CHECK (octet_length(`last_name`) >= 2)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci$$
+
