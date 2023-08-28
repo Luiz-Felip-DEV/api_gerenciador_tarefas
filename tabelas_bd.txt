@@ -13,3 +13,19 @@ CREATE TABLE `users` (
   CONSTRAINT `check_last_name_minimo_caracteres` CHECK (octet_length(`last_name`) >= 2)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci$$
 
+
+
+delimiter $$
+
+CREATE TABLE `task` (
+  `id_task` int(4) NOT NULL AUTO_INCREMENT,
+  `id_user` int(4) DEFAULT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `description` varchar(300) DEFAULT NULL,
+  `start_date` date DEFAULT NULL,
+  `final_date` date DEFAULT NULL,
+  `color` varchar(100) DEFAULT NULL,
+  `date_register` date DEFAULT curdate(),
+  PRIMARY KEY (`id_task`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci$$
+
