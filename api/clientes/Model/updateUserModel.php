@@ -5,8 +5,7 @@ include_once 'vendor/autoload.php';
     class updateUserModel {
 
         public function update(array $arrDados)
-        {
-    
+        {   
             $db = DB::connect();
 
             $id         = (isset($arrDados['id']))                  ? $arrDados['id']         : $arrDados[0];

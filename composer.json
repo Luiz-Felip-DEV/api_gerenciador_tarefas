@@ -8,7 +8,8 @@
       "api/clientes/Model/postUserModel.php",
       "api/clientes/Model/getUserModel.php",
       "api/clientes/Model/updateUserModel.php",
-      "api/clientes/Model/deleteUserModel.php"
+      "api/clientes/Model/deleteUserModel.php",
+      "api/task/Model/postTaskModel.php"
     ],
     "psr-4": {
       "classes\\": "classes",

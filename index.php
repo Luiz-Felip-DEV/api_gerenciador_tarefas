@@ -39,6 +39,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 include_once 'classes/db.class.php';
 include_once 'api/clientes/clientes.php';
+include_once 'api/task/task.php';
 include_once 'api/dev/dev.php';
 
 
